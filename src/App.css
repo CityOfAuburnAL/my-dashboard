@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+  display: flex;
+  height: 100%;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+ul.striped {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.striped li:nth-child(even) {
+  background: #F5F5F5;
+}
+ul.flex li {
+  display: flex;
+}
+ul.flex.row li {
+  flex-direction: row;
+  align-items: center;
+}
+ul.flex.row li > span { /*Technically this makes it off center, but since line-height is 1.2 and optically, it should center text */
+  padding-bottom: 0.2em;
+}
+ul.flex.row li > div {
+  white-space: nowrap;
+}
+@media screen and (max-width: 767px) {
+  ul.flex.row li {
+      flex-direction: column;
+  }
+}
